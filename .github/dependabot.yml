@@ -1,0 +1,17 @@
+version: 2
+updates:
+- package-ecosystem: gomod
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: github.com/jaimeteb/chatto
+    versions:
+    - 0.7.1
+    - 0.8.0
+    - 0.8.1
+    - 0.8.2
+    - 0.8.3
+    - 0.8.4
+    - 0.8.5
